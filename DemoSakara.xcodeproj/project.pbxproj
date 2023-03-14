@@ -13,6 +13,10 @@
 		3B4FDAC729C0DAB900E90294 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3B4FDAC529C0DAB900E90294 /* Main.storyboard */; };
 		3B4FDAC929C0DABD00E90294 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3B4FDAC829C0DABD00E90294 /* Assets.xcassets */; };
 		3B4FDACC29C0DABD00E90294 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3B4FDACA29C0DABD00E90294 /* LaunchScreen.storyboard */; };
+		3B4FDAD429C0E0ED00E90294 /* ViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B4FDAD329C0E0ED00E90294 /* ViewModel.swift */; };
+		3B4FDAD629C0E13D00E90294 /* ShipModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B4FDAD529C0E13D00E90294 /* ShipModel.swift */; };
+		3B4FDAD929C0E25B00E90294 /* ShipViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B4FDAD729C0E25B00E90294 /* ShipViewCell.swift */; };
+		3B4FDADA29C0E25B00E90294 /* ShipViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 3B4FDAD829C0E25B00E90294 /* ShipViewCell.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +28,10 @@
 		3B4FDAC829C0DABD00E90294 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		3B4FDACB29C0DABD00E90294 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		3B4FDACD29C0DABD00E90294 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		3B4FDAD329C0E0ED00E90294 /* ViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewModel.swift; sourceTree = "<group>"; };
+		3B4FDAD529C0E13D00E90294 /* ShipModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShipModel.swift; sourceTree = "<group>"; };
+		3B4FDAD729C0E25B00E90294 /* ShipViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShipViewCell.swift; sourceTree = "<group>"; };
+		3B4FDAD829C0E25B00E90294 /* ShipViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ShipViewCell.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,6 +64,9 @@
 		3B4FDABE29C0DAB900E90294 /* DemoSakara */ = {
 			isa = PBXGroup;
 			children = (
+				3B4FDADD29C0E51700E90294 /* Model */,
+				3B4FDADC29C0E50500E90294 /* ViewModel */,
+				3B4FDADB29C0E4E800E90294 /* View */,
 				3B4FDABF29C0DAB900E90294 /* AppDelegate.swift */,
 				3B4FDAC129C0DAB900E90294 /* SceneDelegate.swift */,
 				3B4FDAC329C0DAB900E90294 /* ViewController.swift */,
@@ -65,6 +76,31 @@
 				3B4FDACD29C0DABD00E90294 /* Info.plist */,
 			);
 			path = DemoSakara;
+			sourceTree = "<group>";
+		};
+		3B4FDADB29C0E4E800E90294 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				3B4FDAD729C0E25B00E90294 /* ShipViewCell.swift */,
+				3B4FDAD829C0E25B00E90294 /* ShipViewCell.xib */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		3B4FDADC29C0E50500E90294 /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				3B4FDAD329C0E0ED00E90294 /* ViewModel.swift */,
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		3B4FDADD29C0E51700E90294 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				3B4FDAD529C0E13D00E90294 /* ShipModel.swift */,
+			);
+			path = Model;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -125,6 +161,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				3B4FDADA29C0E25B00E90294 /* ShipViewCell.xib in Resources */,
 				3B4FDACC29C0DABD00E90294 /* LaunchScreen.storyboard in Resources */,
 				3B4FDAC929C0DABD00E90294 /* Assets.xcassets in Resources */,
 				3B4FDAC729C0DAB900E90294 /* Main.storyboard in Resources */,
@@ -138,8 +175,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				3B4FDAD929C0E25B00E90294 /* ShipViewCell.swift in Sources */,
 				3B4FDAC429C0DAB900E90294 /* ViewController.swift in Sources */,
 				3B4FDAC029C0DAB900E90294 /* AppDelegate.swift in Sources */,
+				3B4FDAD429C0E0ED00E90294 /* ViewModel.swift in Sources */,
+				3B4FDAD629C0E13D00E90294 /* ShipModel.swift in Sources */,
 				3B4FDAC229C0DAB900E90294 /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
